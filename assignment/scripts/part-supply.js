@@ -5,7 +5,7 @@ console.log('****** Part Supply *******');
 //    & console.log the variable
 console.log('1. Number of partsNeeded:');
 let partsNeeded = 40;
-console.log(partsNeeded)
+console.log(partsNeeded);
 
 // 2. Create a variable call 'supplyChanges' set it to an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11
@@ -36,9 +36,9 @@ for (let i=0; i<=supplyChanges.length; i++){
     if(supplyChanges[i] > 0){
         console.log(`Added ${supplyChanges[i]} parts.`);
     }else if (supplyChanges[i] === 0){
-        console.log(`No change.`)
+        console.log(`No change.`);
     }else if (supplyChanges[i] < 0){
-        console.log(`Removed ${supplyChanges[i]} parts.`)
+        console.log(`Removed ${supplyChanges[i]} parts.`);
     }
 }
 
@@ -49,11 +49,11 @@ console.log('---  Stretch Goals  ---');
 console.log('7. Showing supplyChanges with "for of" loop');
 for ( supply of supplyChanges){
     if (supply > 0){
-        console.log(`Added ${supply} parts.`)
+        console.log(`Added ${supply} parts.`);
     }else if (supply === 0){
         console.log(`No change.`)
     }else if (supply < 0){
-        console.log(`Removed ${supply} parts.`)
+        console.log(`Removed ${supply} parts.`);
     }
 }
 // 8. Write a loop to determine the total number of parts available by
@@ -62,7 +62,7 @@ console.log('8. Total supplies available is:');
 let sum = 0;
 for (let i=0; i<supplyChanges.length; i++){
     sum += supplyChanges[i];
-}console.log(sum)
+}console.log(sum);
 
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. 
