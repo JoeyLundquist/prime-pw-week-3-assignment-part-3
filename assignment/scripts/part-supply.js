@@ -77,4 +77,4 @@ while (parts >= 7 ){
     parts -= 7;
     boxes++
 }
-console.log(boxes, parts);
+console.log(`${boxes} boxes, ${parts} parts left over`);
