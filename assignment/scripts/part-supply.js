@@ -5,12 +5,13 @@ console.log('****** Part Supply *******');
 //    & console.log the variable
 console.log('1. Number of partsNeeded:');
 let partsNeeded = 40;
-console.log(partsNeeded);
+console.log('We need', partsNeeded, 'parts');
 
 // 2. Create a variable call 'supplyChanges' set it to an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11
 console.log('2. Array of supplyChanges:');
 let supplyChanges = [3, 5, -6, 0, 7, 11];
+console.log(supplyChanges); //added log to look cleaner in chrome.
 
 // 3. Console log the value of the second item in the 'supplyChanges' array
 console.log('3. Second supplyChange is:');
@@ -25,6 +26,7 @@ console.log(removedSupply);
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Adding 25 to supplyChanges.');
 supplyChanges.push(25);
+console.log(supplyChanges); //added log to look cleaner in chrome.
 
 // 6. Write a `for` loop that shows each value in the 'supplyChanges' array
 //    Use a console.log formatted as follows, where x is the value from the array
@@ -62,7 +64,7 @@ console.log('8. Total supplies available is:');
 let sumOfChanges = 0;
 for (let i=0; i<supplyChanges.length; i++){
     sumOfChanges += supplyChanges[i];
-}console.log(sumOfChanges);
+}console.log('We have', sumOfChanges, 'supplies.');
 
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. 
@@ -77,4 +79,4 @@ while (parts >= 7 ){
     parts -= 7;
     boxes++
 }
-console.log(`${boxes} boxes, ${parts} parts left over`);
+console.log(`We have ${boxes} boxes and ${parts} parts left over`);
